@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everyday English Learning</title>
+  <style>
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff; /* Light blue background */
+      color: #333; /* Text color */
+    }
+
+    header {
+      background-color: #0077cc; /* Ocean blue header */
+      color: white;
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #003366; /* Dark blue footer */
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    a {
+        color: white;
+        text-decoration: none; /* Removing default underline */
+      }
+
+    .lesson {
+      border-radius: 5px;
+      overflow: hidden;
+      margin-bottom: 30px; /* Increased space between lessons */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .lesson:hover {
+      transform: translateY(-5px);
+    }
+
+    .lesson img {
+      width: 100%;
+      height: 200px; /* Adjust the height of the banner */
+      object-fit: cover; /* Crop the image to fit */
+      object-position: center top; /* Adjust vertical position */
+    }
+
+    .lesson-content {
+      padding: 15px;
+    }
+
+    .lesson h3 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-size: 1.5em;
+      color: #0077cc; /* Theme font color */
+    }
+
+    .lesson p {
+      margin-bottom: 10px;
+    }
+
+    .lesson button {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .lesson button:hover {
+      background-color: #005fa3;
+    }
+
+    .auth-buttons button {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 5px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .auth-buttons button:hover {
+      background-color: #005fa3;
+    }
+
+    /* Section styling */
+    .lesson-section {
+      border-bottom: 2px solid #ddd; /* Border between sections */
+      margin-bottom: 40px; /* Space between sections */
+      padding-bottom: 20px; /* Space at the bottom of each section */
+    }
+
+    h2 {
+      color: #0077cc; /* Theme font color */
+      border-bottom: 2px solid #0077cc; /* Section title underline */
+      padding-bottom: 5px;
+      margin-bottom: 20px; /* Space between section title and content */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Everyday English Learning</h1>
+    <p>Learn English easily with our interactive lessons!</p>
+  </header>
+
+  <main>
+    <section class="lesson-section">
+      <h2>Featured Lessons</h2>
+      <!-- Lesson 1 -->
+      <div class="lesson">
+        <img src="https://images.unsplash.com/photo-1620969427101-7a2bb6d83273?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Lesson 1 Image">
+        <div class="lesson-content">
+          <h3>Lesson 1: Introduction to Basic English</h3>
+          <p>This lesson covers basic vocabulary and greetings.</p>
+          <button onclick="startLesson(1)"><a href="lesson2.html">Start</a></button>
+        </div>
+      </div>
+
+      <!-- Lesson 2 -->
+      <div class="lesson">
+        <!-- Placeholder content for Lesson 2 -->
+        <img src="https://images.unsplash.com/photo-1691435880836-ad651a56ec59?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fEludHJvZHVjdGlvbiUyMHRvJTIwQmFzaWMlMjBFbmdsaXNofGVufDB8fDB8fHwy" alt="Lesson 2 Image">
+        <div class="lesson-content">
+          <h3>Lesson 2:  Intermediate English Skills</h3>
+          <p>Focuses on improving speaking and listening abilities.</p>
+          <button onclick="startLesson(2)"><a href="lesson2.html">Start</a></button>
+        </div>
+      </div>
+
+      <!-- Lesson 3 -->
+      <div class="lesson">
+        <!-- Placeholder content for Lesson 3 -->
+        <img src="https://images.unsplash.com/photo-1559127898-2a67ad2680fe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8TGVzc29uJTIwMyUzQSUyMENvbW1vbiUyMFBocmFzZXMlMjBhbmQlMjBFeHByZXNzaW9uc3xlbnwwfHwwfHx8MA%3D%3D" alt="Lesson 3 Image">
+        <div class="lesson-content">
+          <h3>Lesson 3:Advanced English Proficiency</h3>
+          <p> Delves into advanced grammar rules and writing techniques.</p>
+          <button onclick="startLesson(3)"><a href="lesson3.html">Start</a></button>
+        </div>
+      </div>
+
+      <!-- Add more lessons similarly -->
+    </section>
+
+    <section class="lesson-section">
+      <h2>Sign Up / Login</h2>
+      <div class="auth-buttons">
+        <button class="login" onclick="location.href='login.html'">Log In</button>
+        <button class="signup" onclick="location.href='register.html'">Sign Up</button>
+      </div>
+    </section>
+
+    <!-- Other sections and content can be added similarly -->
+
+  </main>
+
+  <footer>
+    <nav>
+
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <!-- Add other footer links -->
+      </ul>
+    </nav>
+  </footer>
+
+  <script>
+   
