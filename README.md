@@ -19,7 +19,8 @@ The website offers users access to English learning lessons in a user-friendly i
 
    ```bash
    git clone https://github.com/yourusername/everyday-english-learning.git
-other decribe : Set Up Local Server Environment:
+#other decribe : 
+Set Up Local Server Environment:
 
 Use XAMPP, WAMP, or any server environment of your choice.
 Ensure PHP and MySQL are properly configured.
